@@ -32,7 +32,7 @@ ul {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -99,7 +99,11 @@ ul {
 .top-menu {
     display: flex;
     gap: 40px;
+    visibility: hidden;
 }
+ .contacts-us{
+    visibility: hidden;
+ }
 
 .contacts-us-menu {
     display: flex;
@@ -161,6 +165,19 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* navv */
+.button-nav{
+    position: absolute;
+  top: 25px;
+  right: 0;
+     
+}
+
+.nav-button {
+        border: none;
+        background-color: transparent;
+}
+
 /* section 1 */
 
 .orders {
@@ -218,6 +235,7 @@ ul {
 
 .concept {
     padding: 120px 0;
+    margin-top: -100px;
 }
 
 .concept-list {
@@ -233,9 +251,7 @@ ul {
     color: #2e2f42;
 }
 
-.concept-item {
-    width: calc((100% - 72px) / 4);
-}
+
 
 .concept-icon-container {
     background-color: #f4f4fd;
@@ -244,9 +260,16 @@ ul {
     margin-bottom: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
+        justify-content: center;
     height: 112px;
 }
+
+
+           
+                
+        
+
+
 
 .concept-icon {
     display: block;
@@ -254,42 +277,55 @@ ul {
 }
 
 .concept-item-header {
-    font-weight: 500;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    /* font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
 }
 
 .concept-item-desc {
-    font-size: 16px;
+   margin-top: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    /* font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #434455; */
 }
 
 /* section 3 */
 
 .team {
     background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
+padding-top: 100px;
 }
-
-.team-list {
-    display: flex;
-}
+        .team-list {
+           
+        }
 
 .team-item {
     background-color: #ffffff;
-    width: calc((100% - 72px) / 4);
-    display: inline-block;
     margin-right: 24px;
     text-align: center;
-    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
         0px 1px 6px 0px #2e2f4214;
+        width: 264px;
+            height: 428px;
+            margin-left: 13px;
+            
+            gap: 32px;
+            border-radius: 0px 0px 4px 4px;
+            
 }
 
 .team-item:last-child {
@@ -377,7 +413,8 @@ ul {
 
 .portfolio {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 96px;
+
 }
 
 .portfolio-header {
@@ -391,10 +428,13 @@ ul {
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+ display: flex;
+ flex-direction: column;
+width: 288px;
+    height: 2452px;
+margin-left: 0;
+    
+        
 }
 
 .portfolio-item-desc {
@@ -404,8 +444,9 @@ ul {
 }
 
 .portfolio-item {
-    width: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+width: 288px;
+    height: 400px;
+    
 }
 
 .portfolio-item-img {
@@ -448,11 +489,9 @@ ul {
 /*footer */
 
 .footer-desc {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    max-width: 264px;
+width: 288px;
+    height: 72px;
+    
 }
 
 body .footer-desc {
@@ -461,8 +500,11 @@ body .footer-desc {
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px 0 100px;
+        width: 320px;
+            height: 664px;
 }
+
+
 
 .footer .container .logo-header {
     display: inline-block;
@@ -472,18 +514,53 @@ body .footer-desc {
 
 .footer-soc-block-header {
     color: #fff;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    margin-bottom: 16px;
+width: 96px;
+    height: 24px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+}
+
+.soc-link-block{
+    width: 208px;
+        height: 80px;
+        margin-left: -200px;
+    display: flex;
+    position: relative;
+    top: 200px;
+    
 }
 
 .footer-text-block {
-    margin-right: 120px;
+    width: 288px;
+        height: 112px;
+  text-align: center;
+  
 }
 
 .footer .container {
     display: flex;
     align-items: baseline;
+}
+
+.social-links-1{
+    position: relative;
+    top: 50px;
+    left: -100px;
+}
+
+.button{
+    position: relative;
+    top: 400px;
+    left: -280px;
+}
+
+.footer-button{
+    position: relative;
+    top: 100px;
+    left: -250px;
 }
 
 .footer .social-links {
@@ -756,3 +833,240 @@ fill: #ffffff;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (max-width: 320px) {
+    .concept-icon-container {
+        visibility: hidden;
+    }
+
+    .concept-list {
+        flex-direction: column;
+    }
+
+    .top-menu {
+        visibility: hidden;
+    }
+
+   .team-list{
+    width: 320px;
+        height: 2232px;
+
+   }
+
+   
+
+}
+
+ @media (min-width: 321px) and (max-width: 768px) {
+    .concept-icon-container {
+        visibility: hidden;
+    }
+
+    .concept-list {
+        width: 736px;
+        height: 312px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: -210px;
+        margin-bottom: 200px;
+    }
+
+    .container {
+        width: 768px;
+
+
+    }
+
+    .top-menu {
+        visibility: unset;
+    }
+
+    .button-nav {
+        visibility: hidden;
+    }
+
+    .contacts-us {
+        visibility: unset;
+
+    }
+
+    .contacts-us-menu {
+
+        display: block;
+        margin-left: 120px;
+        list-style: none;
+    }
+
+    .header {
+
+        display: flex;
+    }
+
+    .logo-header {
+        margin-left: -225px;
+    }
+
+
+    .concept-item-header {
+
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        display: flex;
+        text-align: left;
+        justify-self: start;
+    }
+
+    .concept-item-desc {
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+
+}
+
+.team-list {
+    width: 768px;
+    height: 1224px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -200px;
+
+}
+
+
+.portfolio-list {
+    width: 736px;
+    height: 1516px;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    margin-left: -200px;
+}
+
+
+.footer{
+    width: 768px;
+        height: 456px;
+}
+.footer-text-block{
+    display: flex;
+}
+.footer-desc{
+    margin-top: 40px;
+    margin-left: -135px;
+}
+
+.soc-link-block{
+    position: relative;
+    top: 0;
+    left: 300px;
+}
+
+  .social-links-1 {
+      position: relative;
+      left: -50px;
+      top: 20px;
+  }
+
+.button{
+    position: relative;
+    top: 200px;
+    left: -280px;
+}
+
+
+
+@media (min-width: 769px) {
+
+
+    .logo-header {
+        margin-left: -425px;
+        padding-right: 50px;
+    }
+
+    .containerwidth {
+        width: 1440px;
+
+
+    }
+
+    .contacts-us-menu {
+        display: -webkit-inline-box;
+        margin-left: 300px;
+
+    }
+
+    .top-menu {
+        visibility: unset;
+    }
+
+    .button-nav {
+        visibility: hidden;
+    }
+
+    .contacts-us {
+        visibility: unset;
+    }
+
+    .concept-list {
+        margin-left: -400px;
+        margin-top: 100px;
+    }
+
+    .concept-icon-container {
+        width: 264px;
+        height: 112px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+
+    }
+
+
+.portfolio-list {
+            width: 1128px;
+                height: 1000px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-left: -400px;
+        }
+
+        .footer{
+        width: 1440px;
+        height: 316px;
+        }
+
+            .footer-text-block{
+                display:flex;
+                margin-left: -100px;
+                margin-top: 50px;
+            }
+
+            .footer-desc{
+                position: relative;
+                top: 50px;
+                left: -10px;
+            }
+
+            .soc-link-block{
+                position: relative;
+                top: 0px; 
+                left: 200px;
+            }
+         .social-links-1{
+            position: relative;
+            left: -50px;
+            top: 20px;
+         }
+
+            .button{
+                position: relative;
+                top: 0px;
+                left: 300px;
+            }
+                   
+        }
+       
